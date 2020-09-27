@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
