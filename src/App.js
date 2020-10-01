@@ -53,12 +53,8 @@ class App extends React.Component {
 
 export default App;
 
-//update fetchdata to take inputs from state and do upon update of state
-//update to make fetchdata also create a rangeChart object
-//make sure this is able to be passed down to state and back up
-
-
-//add buttons to update state and trigger a recalc
+//todo
+//add buttons to update state
 
 //spacing between gaps
 //if logic is not obvious, extract into a variable
