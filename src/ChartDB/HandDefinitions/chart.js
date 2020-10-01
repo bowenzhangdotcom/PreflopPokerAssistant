@@ -1,4 +1,4 @@
-import {generateCompositeRange} from '../HandDefinitions/range.js';
+import {generateCompositeRange} from './range.js';
 
 //Generates a blank range
 // const generateBlankCardRange = function() {
@@ -6,7 +6,8 @@ import {generateCompositeRange} from '../HandDefinitions/range.js';
 // };
 
 export class RangeChart {
-    constructor() {
+    constructor(name) {
+        this.name = name;
         this.chart = {
             '22': 'Fold',
             '33': 'Fold',
@@ -187,54 +188,60 @@ export class RangeChart {
     };
 
     setRaise(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "Raise";
+            this.chart[e] = 'Raise';
         });
         this.raise = cardRange;
         return this.chart;
     };
 
     setFold(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "Fold";
+            this.chart[e] = 'Fold';
         });
         this.fold = cardRange;
         return this.chart;
     };
 
     setCall(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "Call";
+            this.chart[e] = 'Call';
         });
         this.call = cardRange;
         return this.chart;
     };
 
     setDynamicRaise(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "DynamicRaise";
+            this.chart[e] = 'DynamicRaise';
         });
         this.dynamicRaise = cardRange;
         return this.chart;
     };
     
     setDynamicFold(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "DynamicFold";
+            this.chart[e] = 'DynamicFold';
         });
         this.dynamicFold = cardRange
         return this.chart;
     };
 
     setDynamicCall(cardRange) {
-        let handRange = generateCompositeRange(cardRange)
+        if(cardRange === 'NA') return false;
+        const handRange = generateCompositeRange(cardRange)
         handRange.forEach((e) => {
-            this.chart[e] = "DynamicCall";
+            this.chart[e] = 'DynamicCall';
         });
         this.dynamicCall = cardRange;
         return this.chart;

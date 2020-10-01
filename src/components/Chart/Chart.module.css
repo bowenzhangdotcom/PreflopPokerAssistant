@@ -1,11 +1,31 @@
 .Raise {
-    background-color: red;
+    background-color: #fca652;
 }
 
 .Fold {
-    fill: blue;
+    background-color: #a2d5f2;
+    ;
 }
 
 .Call {
-    fill: green;
+    background-color: #81b214;
+}
+
+table {
+    font-size: 12px;
+}
+
+th {
+    display: none;
+}
+
+td {
+    border: 1px black solid;
+    width: 25px;
+    height: 25px;
+    margin: 1px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    border-radius: 4px;
 }

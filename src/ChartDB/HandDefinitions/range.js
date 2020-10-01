@@ -3,27 +3,24 @@ import {validateCard, validateHandFormat, validateRangeSuit} from './validation.
 
 export class RangeHand {
     constructor(input) {
-        let hand = input.toString()
-        let high = hand[0].toUpperCase()
-        let kicker = hand[1].toUpperCase()
-        let suit = hand[2] || 'a';
-        validateCard(high);
-        validateCard(kicker);
+        const hand = input.toString()
+        const high = hand[0].toUpperCase()
+        const kicker = hand[1].toUpperCase()
+        const suit = hand[2] || 'a';
         validateHandFormat(high,kicker);
-        validateRangeSuit(suit);
-        this.high = high
-        this.kicker = kicker
-        this.suit = suit
+        this.high = validateCard(high)
+        this.kicker = validateCard(kicker)
+        this.suit = validateRangeSuit(suit)
         this.highRank = cardRank[this.high];
         this.kickerRank = cardRank[this.kicker];
     };
 
     isPair() {
-        return (this.suit === 'a' && this.high === this.kicker) ? true : false;
+        return (this.suit === 'a' && this.high === this.kicker);
     };
     
     isConnector() {
-        return (this.highRank - this.kickerRank === 1) ? true : false;
+        return (this.highRank - this.kickerRank === 1);
     };
 
     getHighKickerSuit() {
@@ -36,10 +33,10 @@ export class RangeHand {
 };
 
 //Return an array of pairs between minPair and maxPair
-const generatePairRange = function(minPair, maxPair="AA") {
-    let bottomHand = new RangeHand(minPair);
-    let topHand = new RangeHand(maxPair);
-    let pairRange = [];
+const generatePairRange = (minPair, maxPair='AA') => {
+    const bottomHand = new RangeHand(minPair);
+    const topHand = new RangeHand(maxPair);
+    const pairRange = [];
     let currentPair = cardRank[bottomHand.high];
     while (currentPair <= cardRank[topHand.high]) {
         pairRange.push(numCard[currentPair].repeat(2));
@@ -49,9 +46,9 @@ const generatePairRange = function(minPair, maxPair="AA") {
 };
 
 //Return an array of connectors between minHand and maxHand
-const generateConnectorRange = function(minHand, maxHand="AK") {
-    let bottomHand = new RangeHand(minHand.toString());
-    let topHand = new RangeHand(maxHand.toString());
+const generateConnectorRange = (minHand, maxHand='AK') => {
+    const bottomHand = new RangeHand(minHand.toString());
+    const topHand = new RangeHand(maxHand.toString());
     if (bottomHand.isConnector() && topHand.isConnector()) {
         let minHighRank = bottomHand.highRank;
         let minKickRank = bottomHand.kickerRank;
@@ -60,18 +57,18 @@ const generateConnectorRange = function(minHand, maxHand="AK") {
         let cardRange = []
         
         while (minHighRank <= maxHighRank && minKickRank <= maxKickRank) {
-            if (bottomHand.suit === "a") {
-                cardRange.push(numCard[minHighRank] + numCard[minKickRank] + "s");    
-                cardRange.push(numCard[minHighRank] + numCard[minKickRank] + "o");    
+            if (bottomHand.suit === 'a') {
+                cardRange.push(numCard[minHighRank] + numCard[minKickRank] + 's');    
+                cardRange.push(numCard[minHighRank] + numCard[minKickRank] + 'o');    
             } else {
                 cardRange.push(numCard[minHighRank] + numCard[minKickRank] + bottomHand.suit);
             };
             minHighRank +=1;
             minKickRank +=1;
-            };
+        };
         return cardRange;
     } else {
-        throw new Error("Invalid Connector Range");
+        throw new Error('Invalid Connector Range');
     };
 };
 
@@ -79,8 +76,8 @@ const generateConnectorRange = function(minHand, maxHand="AK") {
 //Return an array of hands between minHand's kicker and maxHand's kicker
 //Prereq: High card for both hands is the same
 //E.g. A2s-A5s returns [A2s, A3s, A4s, A5s]
-const generateKickerRange = function(minHand,maxHand='na') {
-    let bottomHand = new RangeHand(minHand);
+const generateKickerRange = (minHand,maxHand='na') => {
+    const bottomHand = new RangeHand(minHand);
     let cardRange = []; 
     let highRank = bottomHand.highRank;
     let kickRank = bottomHand.kickerRank;
@@ -95,9 +92,9 @@ const generateKickerRange = function(minHand,maxHand='na') {
     };
 
     while (kickRank < maxKickRank) {
-        if (bottomHand.suit === "a") {
-            cardRange.push(numCard[highRank] + numCard[kickRank] + "s");
-            cardRange.push(numCard[highRank] + numCard[kickRank] + "o");
+        if (bottomHand.suit === 'a') {
+            cardRange.push(numCard[highRank] + numCard[kickRank] + 's');
+            cardRange.push(numCard[highRank] + numCard[kickRank] + 'o');
         } else {
             cardRange.push(numCard[highRank] + numCard[kickRank] + bottomHand.suit);
         };
@@ -108,14 +105,13 @@ const generateKickerRange = function(minHand,maxHand='na') {
 
 //Uses a array of shorthand ranges to return a composite range
 //examples of valid inputs: 'TT+, aj, 22, 66-99, Jts, jto'
-export const generateCompositeRange = function(shorthand) {
-    let shorthandArr = shorthand.split(',')
+export const generateCompositeRange = (shorthand) => {
+    const shorthandArr = shorthand.split(',')
     let cardRange = [];
-    let i;
-    for(i = 0; i<shorthandArr.length; i++) {
-        let e = shorthandArr[i].replace(/\s+/g, '');
-        if ((e.length<4) && (e.substr(-1) !== "+")) {
-            let hand = new RangeHand(e);
+    for(let i = 0; i < shorthandArr.length; i++) {
+        const e = shorthandArr[i].replace(/\s+/g, '');
+        if ((e.length<4) && (e.substr(-1) !== '+')) {
+            const hand = new RangeHand(e);
             if (hand.isPair()) {
                 cardRange.push(hand.getHighKicker());
             } else if (hand.suit === 'a'){
@@ -124,8 +120,8 @@ export const generateCompositeRange = function(shorthand) {
             } else {
                 cardRange.push(hand.getHighKickerSuit());
             }
-        } else if (e.substr(-1) === "+") {
-            let hand = new RangeHand(e.slice(0,-1));
+        } else if (e.substr(-1) === '+') {
+            const hand = new RangeHand(e.slice(0,-1));
             if (hand.isPair()) {
                 cardRange = cardRange.concat(generatePairRange(hand.getHighKicker()));
             } else if (hand.isConnector()) {
@@ -134,9 +130,9 @@ export const generateCompositeRange = function(shorthand) {
                 cardRange = cardRange.concat(generateKickerRange(hand.getHighKickerSuit()));
             };
         } else {
-            let handArr = e.split("-");
-            let handOne = new RangeHand(handArr[0]);
-            let handTwo = new RangeHand(handArr[1]); 
+            const handArr = e.split('-');
+            const handOne = new RangeHand(handArr[0]);
+            const handTwo = new RangeHand(handArr[1]); 
             let minHand;
             let maxHand;
 
