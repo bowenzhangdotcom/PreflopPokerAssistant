@@ -36,8 +36,6 @@ class App extends React.Component {
             let chartRangeObject = this.generateChartRange(serverData);
             this.setState({chartRangeHands: chartRangeObject.getChart()});
             this.setState({chartName: serverData["chartName"]});
-            console.log(this.state.chartRangeHands);
-
         } catch (error) {
             this.setState({chartRangeHands: defaultChart});
             this.setState({chartName: 'Please select a valid range'})
@@ -107,9 +105,11 @@ class App extends React.Component {
 
 export default App;
 
-//todo
-//add buttons to update state
-//add option for password entry
+//deploy server!
+//add option for password entry as an opening popup 
+//Reformat positioning to be horizontal for desktop with percentages
+//Update into absolutes for the iphone xs max
+//add documentation on how to use e.g. chartType definitions and positions
 
 //spacing between gaps
 //if logic is not obvious, extract into a variable

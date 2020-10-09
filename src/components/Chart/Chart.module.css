@@ -1,18 +1,22 @@
 .Raise {
-    background-color: #fca652;
+    color: #ff5a51;
+    border-color: #ff5a51;
 }
 
 .Fold {
-    background-color: #a2d5f2;
-    ;
+    color: #9fb3c8;
+    border-color: #3E4C59;
+
 }
 
 .Call {
-    background-color: #81b214;
+    color: #54c12c;
+    border-color: #54c12c;
 }
 
 table {
     font-size: 12px;
+
 }
 
 th {
@@ -25,7 +29,7 @@ td {
     height: 25px;
     margin: 1px;
     text-align: center;
-    font-family: arial;
     font-weight: bold;
     border-radius: 4px;
+    background-color: #3E4C59;
 }

@@ -1,5 +1,61 @@
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.chartType input[type="radio"]:checked+label {
+    background: #E6c02A;
+    border-color: #E6c02A;
+}
+
+.heroPosition input[type="radio"]:checked+label {
+    background: #E6c02A;
+    border-color: #E6c02A;
+}
+
+.villianPosition input[type="radio"]:checked+label {
+    background: #E6c02A;
+    border-color: #E6c02A;
+}
+
+.chartType label{
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+}
+
+li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input {
+    visibility:hidden;
+}
+
+label {
+    cursor: pointer;
+    font-size: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: #3E4C59;
+    border-style: solid;
+    border-color: #3E4C59;
+
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 0px;
+    height: 0px;
+    text-align: center;
+}
+
+h3 {
+    margin: 5px;
+    font-size: 20px;
 }

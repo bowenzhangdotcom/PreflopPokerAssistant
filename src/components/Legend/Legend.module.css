@@ -1,14 +1,26 @@
 .Raise {
-    background-color: #fca652;
+    color: #ff5a51;
+    border-color: #ff5a51;
+    border-style: solid;
+    width: 90px;
+    background-color: #3E4C59;
 }
 
 .Fold {
-    background-color: #a2d5f2;
-    ;
+    color: #9fb3c8;
+    border-color: #3E4C59;
+    background-color: #3E4C59;
+    border-style: solid;
+    width: 90px;
+
 }
 
 .Call {
-    background-color: #81b214;
+    color: #54c12c;
+    border-color: #54c12c;
+    border-style: solid;
+    width: 90px;
+    background-color: #3E4C59;
 }
 
 .dynamicRaise {
@@ -31,20 +43,16 @@
 .legend li { 
     float: left; 
     margin-right: 30px; 
-    font-size: 20px;
+    font-size: 20px;    
 }
-.legend span {
+.legend label {
     float: left; 
-
-    border: 1px black solid;
-    width: 20px;
-    height: 20px;
+    height: 40px;
     margin-right: 5px;
     text-align: center;
     font-family: arial;
     font-weight: bold;
     border-radius: 4px;
-    
 }
 
 .dynamic {

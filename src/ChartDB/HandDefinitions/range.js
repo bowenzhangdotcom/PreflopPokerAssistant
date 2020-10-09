@@ -131,12 +131,13 @@ export const generateCompositeRange = (shorthand) => {
             };
         } else {
             const handArr = e.split('-');
+            console.log(handArr);
             const handOne = new RangeHand(handArr[0]);
             const handTwo = new RangeHand(handArr[1]); 
             let minHand;
             let maxHand;
 
-            if (handOne.kicker > handTwo.kicker) {
+            if (handOne.kickerRank > handTwo.kickerRank) {
                 minHand = handTwo;
                 maxHand = handOne;
             } else {

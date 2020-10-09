@@ -1,8 +1,10 @@
 body {
-    background-color: white;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
+    color: white;
+    background-color: #121212;
+    font-family: arial;
 }
 
 .container {
