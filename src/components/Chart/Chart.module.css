@@ -1,35 +1,57 @@
-.Raise {
-    color: #ff5a51;
-    border-color: #ff5a51;
+.Container {
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+    margin-top: -4px;
 }
 
-.Fold {
-    color: #9fb3c8;
-    border-color: #3E4C59;
-
+.NotInRange{
+    background: #363636;
+    border-color: #363636;
 }
 
-.Call {
-    color: #54c12c;
+.RaiseBox {
+    min-height: 30px;
+    background-color: #FF726B;
+    border-color: #FF726B;
+}
+
+.CallBox {
+    background-color: #54c12c;
     border-color: #54c12c;
 }
 
-table {
+.FoldBox {
+    background-color:#00AFD6;
+    border-color:#00AFD6;
+}
+
+.ChartLabel{
     font-size: 12px;
-
-}
-
-th {
-    display: none;
-}
-
-td {
-    border: 1px black solid;
-    width: 25px;
-    height: 25px;
-    margin: 1px;
     text-align: center;
     font-weight: bold;
+    color: white;
+    width: 20px;
+    z-index: 999;
+    position: absolute;
+    top: 27%;
+    right: 20%;
+}
+
+.TableBox {
+    display: flex;
+    width: 30px;
     border-radius: 4px;
-    background-color: #3E4C59;
+}
+
+.ChartTable {
+    display: table;         
+    width: auto;         
+    border-spacing: 3px;
+}
+
+.ChartRow{
+    display: table-row;
+    width: auto;
+    clear: both;
 }

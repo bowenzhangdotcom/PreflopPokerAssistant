@@ -8,8 +8,17 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+}
+
+.Selections{
+    float: left;
+}
+
+.ChartCombo {
+    float: left;
+}
+
+.ChartName{
+    margin-top: 3%;
 }

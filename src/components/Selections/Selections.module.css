@@ -23,6 +23,8 @@ ul {
     display: inline-block;
     text-align: center;
     margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 li {
@@ -34,18 +36,18 @@ input {
     visibility:hidden;
 }
 
-label {
+.SelectionsLabel {
     cursor: pointer;
     font-size: 30px;
     display: inline-block;
-    width: 60px;
+    width: 80px;
     height: 40px;
     line-height: 40px;
     border-radius: 4px;
-    background: #3E4C59;
+    background: #363636;
     border-style: solid;
-    border-color: #3E4C59;
-
+    border-color: #363636;
+    margin-bottom: 0px;
 }
 
 input[type=radio] {
@@ -58,4 +60,5 @@ input[type=radio] {
 h3 {
     margin: 5px;
     font-size: 20px;
+    margin-top: 20px;
 }

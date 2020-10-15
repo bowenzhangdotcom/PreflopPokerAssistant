@@ -1,39 +1,16 @@
 .Raise {
-    color: #ff5a51;
-    border-color: #ff5a51;
-    border-style: solid;
-    width: 90px;
-    background-color: #3E4C59;
+    border-color: #FF726B;
+    background: #FF726B;
 }
 
 .Fold {
-    color: #9fb3c8;
-    border-color: #3E4C59;
-    background-color: #3E4C59;
-    border-style: solid;
-    width: 90px;
-
+    border-color: #00AFD6;
+    background: #00AFD6
 }
 
 .Call {
-    color: #54c12c;
+    background: #54c12c;
     border-color: #54c12c;
-    border-style: solid;
-    width: 90px;
-    background-color: #3E4C59;
-}
-
-.dynamicRaise {
-    background-color: red;
-}
-
-.dynamicFold {
-    background-color: blue;
-    ;
-}
-
-.dynamicCall {
-    background-color: green;
 }
 
 .legend { 
@@ -43,16 +20,20 @@
 .legend li { 
     float: left; 
     margin-right: 30px; 
-    font-size: 20px;    
 }
-.legend label {
+
+.legend li label {
     float: left; 
     height: 40px;
+    line-height: 40px;
+    font-size: 30px;
     margin-right: 5px;
     text-align: center;
     font-family: arial;
     font-weight: bold;
     border-radius: 4px;
+    border-style: solid;
+    width: 90px;
 }
 
 .dynamic {
