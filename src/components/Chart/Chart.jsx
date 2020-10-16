@@ -27,10 +27,35 @@ class Chart extends React.Component{
             let cell = [];
             for (let idx = 0; idx < this.chartTable[i].length; idx++) {
                 let hand = this.chartTable[i][idx];
-                const raiseP = this.props.data[hand]['Raise'];
-                const callP = this.props.data[hand]['Call'];
-                const foldP = this.props.data[hand]['Fold'];
-                const nirP = 1 - (raiseP + callP + foldP);
+                let raiseP = this.props.data[hand]['Raise'];
+                let callP = this.props.data[hand]['Call'];
+                let foldP = this.props.data[hand]['Fold'];
+                let nirP = 1 - (raiseP + callP + foldP);
+
+                if (this.props.RngToggle) {
+                    const seed = Math.random();
+                    if (seed <= raiseP) {
+                        raiseP = 1;
+                        callP = 0;
+                        foldP = 0;
+                        nirP = 0; 
+                    } else if (seed <= raiseP + callP) {
+                        raiseP = 0;
+                        callP = 1;
+                        foldP = 0;
+                        nirP = 0; 
+                    } else if (seed <= raiseP + callP + foldP) {
+                        raiseP = 0;
+                        callP = 0;
+                        foldP = 1;
+                        nirP = 0; 
+                    } else {
+                        raiseP = 0;
+                        callP = 0;
+                        foldP = 0;
+                        nirP = 1;
+                    }
+                }
 
                 cell.push(
                     <div key={`${hand}_container`} className={styles.Container}>

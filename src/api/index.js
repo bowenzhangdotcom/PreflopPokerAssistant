@@ -1,7 +1,5 @@
 
-export const fetchData = async (inputChartType, inputHeroPosition, inputVillianPosition) => {
-    let username = 'user';
-    let password = 'pass';
+export const fetchData = async (username, password, inputChartType, inputHeroPosition, inputVillianPosition) => {
     let url = `http://localhost:8080/api/getChartRange/?chartType=${inputChartType}&heroPosition=${inputHeroPosition}&villianPosition=${inputVillianPosition}`
     let authString = `${username}:${password}`
     let headers = new Headers();

@@ -1,10 +1,25 @@
 import React from 'react';
 import styles from './Selections.module.css';
 
+const selectionsRender = {
+    NA: {
+        heroPosition: "hide",
+        villianPosition: "hide"
+    },
+    RFI: {
+        villianPosition: "hide",
+        BBHP: "hide"
+    }, 
+    FOR: {
+        UTGHP: "hide"
+    }, 
+    F3B: {
+    }
+}
 
 class Selections extends React.Component {
     render() {
-        console.log(this.props.selectedChartType);
+        const visibility = selectionsRender[this.props.selectedChartType];
         return (
                 <>
                     <div className={styles.chartType} id="chartType" onChange={this.props.handleChartTypeUpdate}>
@@ -24,13 +39,13 @@ class Selections extends React.Component {
                             </li>
                         </ul>
                     </div>  
-                    <div className={styles.heroPosition} id="heroPosition" onChange={this.props.handleHeroPositionUpdate}>
+                    <div className={`${styles.heroPosition} ${styles[visibility['heroPosition']]}`}id="heroPosition" onChange={this.props.handleHeroPositionUpdate}>
                         <h3>Hero Position</h3>
                         <div>
                             <ul>
                                 <li>
                                     <input type='radio' value='UTG' name='heroPosition' id='UTG-HP'/>
-                                    <label htmlFor='UTG-HP' className={styles.SelectionsLabel}>UTG</label>
+                                    <label htmlFor='UTG-HP' className={`${styles.SelectionsLabel} ${styles[visibility['UTGHP']]}`}>UTG</label>
                                 </li>
                                 <li>
                                     <input type='radio' value='HJ' name='heroPosition'  id='HJ-HP'/>
@@ -54,13 +69,13 @@ class Selections extends React.Component {
                                 </li>
                                 <li>
                                     <input type='radio' value='BB' name='heroPosition'  id='BB-HP'/>
-                                    <label htmlFor='BB-HP' className={styles.SelectionsLabel}>BB</label>
+                                    <label htmlFor='BB-HP' className={`${styles.SelectionsLabel} ${styles[visibility['BBHP']]}`}>BB</label>
                                 </li>
                             </ul>
                         </div>
                                
                     </div>  
-                    <div className={styles.villianPosition} id="villianPosition" onChange={this.props.handleVillianPositionUpdate}>
+                    <div className={`${styles.villianPosition} ${styles[visibility['villianPosition']]}`} id="villianPosition" onChange={this.props.handleVillianPositionUpdate}>
                         <h3>Villian Position</h3>
                         <div>
                             <ul>
@@ -94,7 +109,6 @@ class Selections extends React.Component {
                                 </li>
                             </ul>
                        </div>
-    
                     </div> 
                 </>
         );

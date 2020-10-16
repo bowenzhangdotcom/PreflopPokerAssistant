@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from './components/Chart/Chart';
 import Legend from './components/Legend/Legend';
 import Selections from './components/Selections/Selections';
+import RngToggle from './components/RngToggle/RngToggle';
 import styles from './App.module.css';
 import {fetchData, defaultChart} from './api/index.js';
 
@@ -12,11 +13,14 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            username: 'user',
+            password: 'pass',
             chartType: 'NA',
             heroPosition: 'NA',
             villianPosition: 'NA',
             chartName: '',
-            chartRangeHands: ''
+            chartRangeHands: '',
+            RngToggle: false
         };
     };
 
@@ -24,12 +28,14 @@ class App extends React.Component {
         let cT = this.state.chartType;
         let hP = this.state.heroPosition;
         let vP = this.state.villianPosition;
+        const username = this.state.username;
+        const password = this.state.password;
         
         if(cT === 'RFI') {
             vP = 'NA'
         };
         
-        const serverData = await fetchData(cT, hP, vP);
+        const serverData = await fetchData(username, password, cT, hP, vP);
         try {
             this.setState({chartRangeHands: serverData["chartRange"]});
             this.setState({chartName: serverData["chartName"]});
@@ -72,6 +78,13 @@ class App extends React.Component {
         });
     };
 
+    handleRngToggleUpdate = (event) => {
+        this.setState({
+            RngToggle: event.target.checked
+        });
+        console.log(this.state);
+    };
+
     render() {
         return (
             <div>
@@ -86,7 +99,12 @@ class App extends React.Component {
                         />                       
                     </div>
                     <div className={styles.ChartCombo}>
-                        <Chart data={this.state.chartRangeHands} />
+                        <Chart 
+                            data={this.state.chartRangeHands}
+                            RngToggle={this.state.RngToggle}
+                        />
+                        <RngToggle 
+                            handleRngToggleUpdate = {this.handleRngToggleUpdate}/>
                         <Legend />
                     </div>
                 </div>
@@ -97,15 +115,8 @@ class App extends React.Component {
 
 export default App;
 
-//deploy server!
-//add option for password entry as an opening popup 
-//Update into absolutes for the iphone xs max
-//add documentation on how to use e.g. chartType definitions and positions
+//add option for password entry as an opening popup & and update defaults
+//deploy server after changing user / pass
 
-//label for not in range / update fold to be a brighter blue
-//new column to db for chart source
-//new buttons for new chart types
-//add option for how to display - split range toggle
-//add option to display with split ranges
-//Update irrelevant selections to dissapear on selection
-//Fix centering of buttons and such
+//Update formatting for tablet and phone
+//add documentation on how to use e.g. chartType definitions and positions
