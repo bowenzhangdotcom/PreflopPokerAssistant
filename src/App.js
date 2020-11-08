@@ -1,6 +1,7 @@
 import React from 'react';
 import Chart from './components/Chart/Chart';
 import Legend from './components/Legend/Legend';
+import Login from './components/Login/Login';
 import Selections from './components/Selections/Selections';
 import RngToggle from './components/RngToggle/RngToggle';
 import styles from './App.module.css';
@@ -16,8 +17,10 @@ class App extends React.Component {
             username: 'user',
             password: 'pass',
             chartType: 'NA',
+            playerCount:'NA',
             heroPosition: 'NA',
             villianPosition: 'NA',
+            sizing:'NA',
             chartName: '',
             chartRangeHands: '',
             RngToggle: false
@@ -26,8 +29,10 @@ class App extends React.Component {
 
     async updateChartInfo() {
         let cT = this.state.chartType;
+        let pC = this.state.playerCount;
         let hP = this.state.heroPosition;
         let vP = this.state.villianPosition;
+        let s = this.state.sizing;
         const username = this.state.username;
         const password = this.state.password;
         
@@ -35,7 +40,8 @@ class App extends React.Component {
             vP = 'NA'
         };
         
-        const serverData = await fetchData(username, password, cT, hP, vP);
+        const serverData = await fetchData(username, password, cT, pC, hP, vP, s);
+        console.log(serverData);
         try {
             this.setState({chartRangeHands: serverData["chartRange"]});
             this.setState({chartName: serverData["chartName"]});
@@ -64,7 +70,12 @@ class App extends React.Component {
         this.setState({
             chartType: event.target.value
         });
-    }
+        if (event.target.value === 'RFI' && this.state.playerCount === '2') {
+            this.setState({
+                sizing: '2.5x'
+            });
+        };
+    };
 
     handleHeroPositionUpdate = (event) => {
         this.setState({
@@ -78,6 +89,24 @@ class App extends React.Component {
         });
     };
 
+    handlePlayerCountUpdate = (event) => {
+        this.setState({
+            playerCount: event.target.value, 
+            sizing:'NA',
+            chartType: 'NA',
+            heroPosition: 'NA',
+            villianPosition: 'NA',
+            chartName: '',
+            chartRangeHands: ''
+        });
+    };
+
+    handleSizingUpdate = (event) => {
+        this.setState({
+            sizing: event.target.value
+        });
+    };
+
     handleRngToggleUpdate = (event) => {
         this.setState({
             RngToggle: event.target.checked
@@ -87,15 +116,21 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <>
+            <div className={styles.Login}>
+            </div>
+            <div className={styles.PrimarySection}>
                 <h1 className={styles.ChartName}>{this.state.chartName || 'Please select a valid range'}</h1>
                 <div className={styles.container}>
                     <div className={styles.Selections}>
                         <Selections className={styles.Selections}
                             selectedChartType = {this.state.chartType}
+                            selectedPlayerCount = {this.state.playerCount}
                             handleChartTypeUpdate = {this.handleChartTypeUpdate} 
                             handleHeroPositionUpdate = {this.handleHeroPositionUpdate} 
                             handleVillianPositionUpdate = {this.handleVillianPositionUpdate} 
+                            handlePlayerCountUpdate = {this.handlePlayerCountUpdate}
+                            handleSizingUpdate = {this.handleSizingUpdate}
                         />                       
                     </div>
                     <div className={styles.ChartCombo}>
@@ -109,6 +144,7 @@ class App extends React.Component {
                     </div>
                 </div>
             </div>
+            </>
         );
     };
 };

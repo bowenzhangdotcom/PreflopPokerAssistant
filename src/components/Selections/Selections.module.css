@@ -14,6 +14,16 @@
     border-color: #E6c02A;
 }
 
+.playerCount input[type="radio"]:checked+label {
+    background: #E6c02A;
+    border-color: #E6c02A;
+}
+
+.sizing input[type="radio"]:checked+label {
+    background: #E6c02A;
+    border-color: #E6c02A;
+}
+
 .chartType label{
     width: 80px;
 }
@@ -48,6 +58,12 @@ input {
     border-style: solid;
     border-color: #363636;
     margin-bottom: 0px;
+}
+
+.TextLabel {
+    font-size: 25px;
+    margin-top: 20px;
+    font: bold; 
 }
 
 input[type=radio] {

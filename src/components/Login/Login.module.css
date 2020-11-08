@@ -1,0 +1,15 @@
+input {
+    border: 1px solid #a4a4a4;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 15%;
+    margin-bottom: 10px;
+    background: #f8f8ff;
+}
+
+form {
+    background-color: white;
+}
+
+label {
+}

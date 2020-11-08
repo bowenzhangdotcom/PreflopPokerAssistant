@@ -1,6 +1,7 @@
 
-export const fetchData = async (username, password, inputChartType, inputHeroPosition, inputVillianPosition) => {
-    let url = `http://localhost:8080/api/getChartRange/?chartType=${inputChartType}&heroPosition=${inputHeroPosition}&villianPosition=${inputVillianPosition}`
+
+export const fetchData = async (username, password, inputChartType, inputPlayerCount, inputHeroPosition, inputVillianPosition, inputSizing) => {
+    let url = `http://localhost:8080/api/getChartRange/?chartType=${inputChartType}&playerCount=${inputPlayerCount}&heroPosition=${inputHeroPosition}&villianPosition=${inputVillianPosition}&sizing=${inputSizing}`
     let authString = `${username}:${password}`
     let headers = new Headers();
     headers.set('Authorization', 'Basic ' + btoa(authString))
