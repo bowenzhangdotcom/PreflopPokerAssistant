@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/bowenzhangdotcom/preflop-poker-local/static/css/main.f86cf579.chunk.css",
-    "main.js": "/bowenzhangdotcom/preflop-poker-local/static/js/main.88abd582.chunk.js",
-    "main.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/main.88abd582.chunk.js.map",
-    "runtime-main.js": "/bowenzhangdotcom/preflop-poker-local/static/js/runtime-main.44bccec6.js",
-    "runtime-main.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/runtime-main.44bccec6.js.map",
-    "static/js/2.968b4e97.chunk.js": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js",
-    "static/js/2.968b4e97.chunk.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js.map",
-    "index.html": "/bowenzhangdotcom/preflop-poker-local/index.html",
-    "precache-manifest.4357b12c446fcddaa3cc524c7e0c6b14.js": "/bowenzhangdotcom/preflop-poker-local/precache-manifest.4357b12c446fcddaa3cc524c7e0c6b14.js",
-    "service-worker.js": "/bowenzhangdotcom/preflop-poker-local/service-worker.js",
-    "static/css/main.f86cf579.chunk.css.map": "/bowenzhangdotcom/preflop-poker-local/static/css/main.f86cf579.chunk.css.map",
-    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
+    "main.css": "/preflop-poker-local/static/css/main.f86cf579.chunk.css",
+    "main.js": "/preflop-poker-local/static/js/main.88abd582.chunk.js",
+    "main.js.map": "/preflop-poker-local/static/js/main.88abd582.chunk.js.map",
+    "runtime-main.js": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js",
+    "runtime-main.js.map": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js.map",
+    "static/js/2.968b4e97.chunk.js": "/preflop-poker-local/static/js/2.968b4e97.chunk.js",
+    "static/js/2.968b4e97.chunk.js.map": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.map",
+    "index.html": "/preflop-poker-local/index.html",
+    "precache-manifest.05a6e81e6a1f9ec71dd53ec937aa4cd0.js": "/preflop-poker-local/precache-manifest.05a6e81e6a1f9ec71dd53ec937aa4cd0.js",
+    "service-worker.js": "/preflop-poker-local/service-worker.js",
+    "static/css/main.f86cf579.chunk.css.map": "/preflop-poker-local/static/css/main.f86cf579.chunk.css.map",
+    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.44bccec6.js",
+    "static/js/runtime-main.7fd4abab.js",
     "static/js/2.968b4e97.chunk.js",
     "static/css/main.f86cf579.chunk.css",
     "static/js/main.88abd582.chunk.js"
