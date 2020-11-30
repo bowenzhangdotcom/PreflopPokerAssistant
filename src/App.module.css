@@ -9,6 +9,7 @@ body {
 }
 
 .PrimarySection {
+    /*display: none; */
 }
 
 .Login {
@@ -28,4 +29,10 @@ body {
 
 .ChartName{
     margin-top: 3%;
+}
+
+.HowTo{
+    display: block; 
+    margin-left: 15%;
+    margin-right: 15%;
 }

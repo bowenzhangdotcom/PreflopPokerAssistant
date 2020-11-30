@@ -19,9 +19,9 @@ class Chart extends React.Component{
     ]
     render() {
         let rows = [];
-        if (!this.props.data) {
+        /*if (!this.props.data) {
             return <div id='RangeChart' key={'RangeChart'}>Loading...</div>
-        }
+        } */
         for (let i = 0; i < this.chartTable.length; i++){
             let rowID = this.chartTable[i][0][1];
             let cell = [];

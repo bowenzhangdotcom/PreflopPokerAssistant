@@ -1,0 +1,15 @@
+.readMoreLink{
+    text-decoration: underline;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.extraContent{
+    font-weight: 500;
+    display: inline-block;
+}
+
+.contentColumn h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
