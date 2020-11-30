@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f86cf579.chunk.css",
-    "main.js": "/static/js/main.88abd582.chunk.js",
-    "main.js.map": "/static/js/main.88abd582.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.da6e5043.js",
-    "runtime-main.js.map": "/static/js/runtime-main.da6e5043.js.map",
-    "static/js/2.968b4e97.chunk.js": "/static/js/2.968b4e97.chunk.js",
-    "static/js/2.968b4e97.chunk.js.map": "/static/js/2.968b4e97.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e19506b4499eea8adb7c56371d03669b.js": "/precache-manifest.e19506b4499eea8adb7c56371d03669b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f86cf579.chunk.css.map": "/static/css/main.f86cf579.chunk.css.map",
-    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/static/js/2.968b4e97.chunk.js.LICENSE.txt"
+    "main.css": "/bowenzhangdotcom/preflop-poker-local/static/css/main.f86cf579.chunk.css",
+    "main.js": "/bowenzhangdotcom/preflop-poker-local/static/js/main.88abd582.chunk.js",
+    "main.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/main.88abd582.chunk.js.map",
+    "runtime-main.js": "/bowenzhangdotcom/preflop-poker-local/static/js/runtime-main.44bccec6.js",
+    "runtime-main.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/runtime-main.44bccec6.js.map",
+    "static/js/2.968b4e97.chunk.js": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js",
+    "static/js/2.968b4e97.chunk.js.map": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js.map",
+    "index.html": "/bowenzhangdotcom/preflop-poker-local/index.html",
+    "precache-manifest.4357b12c446fcddaa3cc524c7e0c6b14.js": "/bowenzhangdotcom/preflop-poker-local/precache-manifest.4357b12c446fcddaa3cc524c7e0c6b14.js",
+    "service-worker.js": "/bowenzhangdotcom/preflop-poker-local/service-worker.js",
+    "static/css/main.f86cf579.chunk.css.map": "/bowenzhangdotcom/preflop-poker-local/static/css/main.f86cf579.chunk.css.map",
+    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/bowenzhangdotcom/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.da6e5043.js",
+    "static/js/runtime-main.44bccec6.js",
     "static/js/2.968b4e97.chunk.js",
     "static/css/main.f86cf579.chunk.css",
     "static/js/main.88abd582.chunk.js"
