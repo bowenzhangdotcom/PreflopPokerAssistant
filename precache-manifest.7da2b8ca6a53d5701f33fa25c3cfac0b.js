@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e12bb22210140e72ca6a330a8473c3f8",
+    "revision": "2d2914a031411732dc95299c1d1fb568",
     "url": "/preflop-poker-local/index.html"
   },
   {
-    "revision": "3c8c8800beb0546e831a",
-    "url": "/preflop-poker-local/static/css/main.f86cf579.chunk.css"
+    "revision": "203a77258f744c3a4d78",
+    "url": "/preflop-poker-local/static/css/main.497fb2d9.chunk.css"
   },
   {
     "revision": "4955a00ddcdd422bbc77",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c8c8800beb0546e831a",
+    "revision": "203a77258f744c3a4d78",
     "url": "/preflop-poker-local/static/js/main.88abd582.chunk.js"
   },
   {
