@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d2914a031411732dc95299c1d1fb568",
+    "revision": "cd0072b4c7e3eed0598e88e38ce2fc04",
     "url": "/preflop-poker-local/index.html"
   },
   {
