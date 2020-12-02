@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/preflop-poker-local/precache-manifest.f51fc1e57ee77656cd65166d41914101.js"
+  "/preflop-poker-local/precache-manifest.eaffeef15d44c5109251e123eb3dd81e.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/preflop-poker-local/static/css/main.497fb2d9.chunk.css",
-    "main.js": "/preflop-poker-local/static/js/main.88abd582.chunk.js",
-    "main.js.map": "/preflop-poker-local/static/js/main.88abd582.chunk.js.map",
+    "main.js": "/preflop-poker-local/static/js/main.4f3b7f26.chunk.js",
+    "main.js.map": "/preflop-poker-local/static/js/main.4f3b7f26.chunk.js.map",
     "runtime-main.js": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js",
     "runtime-main.js.map": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js.map",
     "static/js/2.968b4e97.chunk.js": "/preflop-poker-local/static/js/2.968b4e97.chunk.js",
     "static/js/2.968b4e97.chunk.js.map": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.map",
     "index.html": "/preflop-poker-local/index.html",
-    "precache-manifest.f51fc1e57ee77656cd65166d41914101.js": "/preflop-poker-local/precache-manifest.f51fc1e57ee77656cd65166d41914101.js",
+    "precache-manifest.eaffeef15d44c5109251e123eb3dd81e.js": "/preflop-poker-local/precache-manifest.eaffeef15d44c5109251e123eb3dd81e.js",
     "service-worker.js": "/preflop-poker-local/service-worker.js",
     "static/css/main.497fb2d9.chunk.css.map": "/preflop-poker-local/static/css/main.497fb2d9.chunk.css.map",
     "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7fd4abab.js",
     "static/js/2.968b4e97.chunk.js",
     "static/css/main.497fb2d9.chunk.css",
-    "static/js/main.88abd582.chunk.js"
+    "static/js/main.4f3b7f26.chunk.js"
   ]
 }
