@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/preflop-poker-local/static/css/main.497fb2d9.chunk.css",
-    "main.js": "/preflop-poker-local/static/js/main.4f3b7f26.chunk.js",
-    "main.js.map": "/preflop-poker-local/static/js/main.4f3b7f26.chunk.js.map",
-    "runtime-main.js": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js",
-    "runtime-main.js.map": "/preflop-poker-local/static/js/runtime-main.7fd4abab.js.map",
-    "static/js/2.968b4e97.chunk.js": "/preflop-poker-local/static/js/2.968b4e97.chunk.js",
-    "static/js/2.968b4e97.chunk.js.map": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.map",
-    "index.html": "/preflop-poker-local/index.html",
-    "precache-manifest.ab6f4a288cd9e9dd6e78241aa22b8887.js": "/preflop-poker-local/precache-manifest.ab6f4a288cd9e9dd6e78241aa22b8887.js",
-    "service-worker.js": "/preflop-poker-local/service-worker.js",
-    "static/css/main.497fb2d9.chunk.css.map": "/preflop-poker-local/static/css/main.497fb2d9.chunk.css.map",
-    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/preflop-poker-local/static/js/2.968b4e97.chunk.js.LICENSE.txt"
+    "main.css": "/PreflopPokerAssistant/static/css/main.497fb2d9.chunk.css",
+    "main.js": "/PreflopPokerAssistant/static/js/main.4f3b7f26.chunk.js",
+    "main.js.map": "/PreflopPokerAssistant/static/js/main.4f3b7f26.chunk.js.map",
+    "runtime-main.js": "/PreflopPokerAssistant/static/js/runtime-main.11107ad2.js",
+    "runtime-main.js.map": "/PreflopPokerAssistant/static/js/runtime-main.11107ad2.js.map",
+    "static/js/2.968b4e97.chunk.js": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js",
+    "static/js/2.968b4e97.chunk.js.map": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js.map",
+    "index.html": "/PreflopPokerAssistant/index.html",
+    "precache-manifest.32ceb33487cf213d7cecbbc8147267cf.js": "/PreflopPokerAssistant/precache-manifest.32ceb33487cf213d7cecbbc8147267cf.js",
+    "service-worker.js": "/PreflopPokerAssistant/service-worker.js",
+    "static/css/main.497fb2d9.chunk.css.map": "/PreflopPokerAssistant/static/css/main.497fb2d9.chunk.css.map",
+    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7fd4abab.js",
+    "static/js/runtime-main.11107ad2.js",
     "static/js/2.968b4e97.chunk.js",
     "static/css/main.497fb2d9.chunk.css",
     "static/js/main.4f3b7f26.chunk.js"
