@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PreflopPokerAssistant/precache-manifest.59d50e3e91e3c4cd25bec6e7e5f55e58.js"
+  "/PreflopPokerAssistant/precache-manifest.b130c7a2d11fdf46abe036478a8d6c04.js"
 );
 
 self.addEventListener('message', (event) => {
