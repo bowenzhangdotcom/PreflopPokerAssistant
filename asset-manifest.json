@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/PreflopPokerAssistant/static/css/main.497fb2d9.chunk.css",
-    "main.js": "/PreflopPokerAssistant/static/js/main.4f3b7f26.chunk.js",
-    "main.js.map": "/PreflopPokerAssistant/static/js/main.4f3b7f26.chunk.js.map",
+    "main.js": "/PreflopPokerAssistant/static/js/main.9f9ec46c.chunk.js",
+    "main.js.map": "/PreflopPokerAssistant/static/js/main.9f9ec46c.chunk.js.map",
     "runtime-main.js": "/PreflopPokerAssistant/static/js/runtime-main.11107ad2.js",
     "runtime-main.js.map": "/PreflopPokerAssistant/static/js/runtime-main.11107ad2.js.map",
-    "static/js/2.968b4e97.chunk.js": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js",
-    "static/js/2.968b4e97.chunk.js.map": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js.map",
+    "static/js/2.dc600002.chunk.js": "/PreflopPokerAssistant/static/js/2.dc600002.chunk.js",
+    "static/js/2.dc600002.chunk.js.map": "/PreflopPokerAssistant/static/js/2.dc600002.chunk.js.map",
     "index.html": "/PreflopPokerAssistant/index.html",
-    "precache-manifest.82bcb7371f2a94affec83f788e4375e1.js": "/PreflopPokerAssistant/precache-manifest.82bcb7371f2a94affec83f788e4375e1.js",
+    "precache-manifest.59d50e3e91e3c4cd25bec6e7e5f55e58.js": "/PreflopPokerAssistant/precache-manifest.59d50e3e91e3c4cd25bec6e7e5f55e58.js",
     "service-worker.js": "/PreflopPokerAssistant/service-worker.js",
     "static/css/main.497fb2d9.chunk.css.map": "/PreflopPokerAssistant/static/css/main.497fb2d9.chunk.css.map",
-    "static/js/2.968b4e97.chunk.js.LICENSE.txt": "/PreflopPokerAssistant/static/js/2.968b4e97.chunk.js.LICENSE.txt"
+    "static/js/2.dc600002.chunk.js.LICENSE.txt": "/PreflopPokerAssistant/static/js/2.dc600002.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.11107ad2.js",
-    "static/js/2.968b4e97.chunk.js",
+    "static/js/2.dc600002.chunk.js",
     "static/css/main.497fb2d9.chunk.css",
-    "static/js/main.4f3b7f26.chunk.js"
+    "static/js/main.9f9ec46c.chunk.js"
   ]
 }
