@@ -1,38 +1,82 @@
 body {
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-    color: white;
-    opacity: .87;
-    background-color: #121212;
-    font-family: arial;
-}
-
-.PrimarySection {
-    /*display: none; */
-}
-
-.Login {
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  opacity: 0.87;
+  background-color: #121212;
+  font-family: arial;
 }
 
 .container {
-    display: inline-block;
+  display: inline-block;
 }
 
-.Selections{
-    float: left;
+.Selections {
+  float: left;
 }
 
 .ChartCombo {
-    float: left;
+  float: left;
 }
 
-.ChartName{
-    margin-top: 3%;
+.ChartName {
+  margin-top: 3%;
 }
 
-.HowTo{
-    display: block; 
-    margin-left: 15%;
-    margin-right: 15%;
+.HowTo {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.phone {
+  height: 50px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 10px;
+  animation: rotate 1.5s ease-in-out infinite alternate;
+}
+
+.message {
+  color: white;
+  font-size: 1em;
+  margin-top: 40px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+.RotateScreen {
+  background: #121212;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+  margin-top: 68%;
+}
+
+html,
+.RotateScreen {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (orientation: portrait) {
+  .PrimarySection {
+    display: none;
+  }
+
+  .RotateScreen {
+    display: flex;
+  }
 }

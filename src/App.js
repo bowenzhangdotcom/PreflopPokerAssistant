@@ -161,12 +161,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {/*}
-            <div className={styles.Login}>
-                <Login
-                handleLoginPassword = {this.state.handleLoginPassword}/>
-            </div>
-            */}
+        <div className={styles.RotateScreen}>
+          <div className={styles.phone}></div>
+          <div className={styles.message}>Please rotate your device!</div>
+        </div>
         <div className={styles.PrimarySection}>
           <h1 className={styles.ChartName}>
             {this.state.chartName || "Please select a valid range"}
@@ -206,9 +204,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-//add option for password entry as an opening popup & and update defaults
-//deploy server after changing user / pass
-
-//Update formatting for tablet and phone
-//add documentation on how to use e.g. chartType definitions and positions
